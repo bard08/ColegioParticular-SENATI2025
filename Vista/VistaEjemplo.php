@@ -1,5 +1,5 @@
 <?php
-// Datos simulados
+
 $usuarios = [
     ['id' => 1, 'nombre' => 'Ana Pérez', 'email' => 'ana@example.com'],
     ['id' => 2, 'nombre' => 'Luis Gómez', 'email' => 'luis@example.com'],
@@ -37,6 +37,8 @@ $usuarios = [
         </tr>
     <?php endforeach; ?>
 </table>
-
+<a href="../index.php">
+    <button>Volver al Menú Principal</button>
+</a>
 </body>
 </html>
