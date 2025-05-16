@@ -16,7 +16,7 @@ $usuarios = [
         body { font-family: Arial; margin: 40px; }
         table { border-collapse: collapse; width: 70%; margin: auto; }
         th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
-        th { background-color: #f0f0f0; }
+        th { background-color: #3a4e7a; }
     </style>
 </head>
 <body>
