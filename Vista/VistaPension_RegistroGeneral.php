@@ -8,7 +8,7 @@
 
   <title>Pensión - Registro General</title>
 
-  <link rel="stylesheet" href="../Modelo/VistaRegistroGeneral.css">
+  <link rel="stylesheet" href="../Vista/css/VistaRegistroGeneral.css">
 
 </head>
 

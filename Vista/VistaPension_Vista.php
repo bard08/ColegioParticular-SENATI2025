@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Pagos - Colegio</title>
-    <link rel="stylesheet" href="../Modelo/VistaPension_Vista.css">
+    <link rel="stylesheet" href="../Vista/css/VistaPension_Vista.css">
     <script>
         function agregarVista() {
             const pagoPension = document.getElementById("ID_PagoPension").value;

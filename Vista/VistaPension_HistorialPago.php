@@ -8,7 +8,7 @@
 
  <title>Historial de Pagos</title>
 
- <link rel="stylesheet" href="../Modelo/VistaHistorialPago.css">
+ <link rel="stylesheet" href="../Vista/css/VistaHistorialPago.css">
 
 </head>
 

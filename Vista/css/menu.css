@@ -1,0 +1,100 @@
+/* Fondo animado */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0101f8;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.9;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenedor principal SIN transparencia */
+.container {
+  background-color: #f8f8fa; /* azul marino sólido */
+  border-radius: 25px;
+  padding: 50px 60px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(3, 18, 236, 0.3);
+  animation: fadeIn 1s ease-out;
+}
+
+/* Logo */
+.logo {
+  width: 90px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 5px #0529f7);
+}
+
+/* Título */
+.titulo {
+  font-size: 2.8rem;
+  margin-bottom: 35px;
+  color: #0707e2;
+  text-shadow: 0 0 15px #edecf1;
+}
+
+/* Menú de botones */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 240px);
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Botones azul marino con texto blanco */
+.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  background: #0602fa;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #fdfdfd;
+  border-radius: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0 12px #0101f8;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.boton:hover {
+  background: #0703fc;
+  color: #f5f6f7;
+  transform: scale(1.06);
+  box-shadow: 0 0 20px #1100ff, 0 0 30px #f7f8f8 inset;
+}
+
+.boton i {
+  width: 20px;
+  height: 20px;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}

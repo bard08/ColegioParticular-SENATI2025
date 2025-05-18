@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  /* Fondo degradado animado */
+  background: linear-gradient(-45deg, #5877a0, #425aa8, #1a58dd, #0f1cd4);
+  background-size: 400% 400%;
+  animation: moveGradient 18s ease infinite;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+
+
+}
+.form-container {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 30px 28px 20px 28px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  max-width: 370px;
+  width: 90%;
+}
+h2 {
+  text-align: center;
+  color: #1f1db3;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 8px 6px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.btn-verde {
+  background-color: #1c1e9c;
+  color: white;
+  font-size: 16px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+  margin-top: 10px;
+}
+.btn-verde:hover {
+  background-color: #18227c;
+}

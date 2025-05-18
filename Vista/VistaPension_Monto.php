@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montos</title>
-    <link rel="stylesheet" href="../Modelo/Dis.css">
+    <link rel="stylesheet" href="../Vista/css/Dis.css">
 </head>
 <body>
 

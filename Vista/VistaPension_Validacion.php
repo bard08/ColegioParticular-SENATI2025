@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Registro de Operación</title>
-  <link rel="stylesheet" href="../Modelo/VistaPension_Validacion.css">
+  <link rel="stylesheet" href="../Vista/css/VistaPension_Validacion.css">
 </head>
 <body>
   <div class="form-container">

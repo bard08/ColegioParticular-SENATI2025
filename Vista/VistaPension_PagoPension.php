@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Pago</title>
-<link rel="stylesheet" href="../Modelo/estilo.css">
+<link rel="stylesheet" href="../Vista/css/estilo.css">
 </head>
 <body>
   <h3 style="color:white;">Pago Pensión</h3>
