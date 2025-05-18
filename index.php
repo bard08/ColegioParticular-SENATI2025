@@ -79,15 +79,15 @@
   </div>
 
   <div class="container">
-    <a href="sub1.php" class="card">
+    <a href="Vista/VistaMatricula.php" class="card">
       <h2>Matrícula</h2>
       <p>Gestión de Matrícula.</p>
     </a>
-    <a href="sub2.php" class="card">
+    <a href="Vista/VistaSeg_MenuPrincipal.php" class="card">
       <h2>Seguimiento de Notas</h2>
       <p>Registro y seguimiento de notas.</p>
     </a>
-    <a href="sub3.php" class="card">
+    <a href="Vista/VistaPrincipal.php" class="card">
       <h2>Pensión</h2>
       <p>Registro y seguimiento de pagos.</p>
     </a>
