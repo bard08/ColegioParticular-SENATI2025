@@ -26,26 +26,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matrículas 2025 - Colegio Particular</title>
-  <link rel="stylesheet" href="../Vista/css/style.css">
+  <link rel="stylesheet" href="style.css">
   <style>
     .seccion {
       display: none;
+    }
 
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
 
-      th,
-      td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-      }
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
 
-      th {
-        background-color: #0066cc;
-      }
+    th {
+      background-color: #0066cc;
+      color: white;
     }
   </style>
 </head>
@@ -56,119 +57,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <p>Plataforma de Matrículas 2025</p>
   </header>
   <nav>
-    <button onclick="mostrarSeccion('requisitos')">Requisitos</button>
+    <h1 class="Menu">Menu</h1>
+    <button onclick="mostrarSeccion('inicio')">Información</button>
     <button onclick="mostrarSeccion('nuevo')">Estudiante Nuevo</button>
     <button onclick="mostrarSeccion('antiguo')">Estudiante Antiguo</button>
-    <button onclick="mostrarSeccion('reporte')">Reporte</button>
-    <button onclick="mostrarSeccion('vacantes')">Vacantes</button>
+    <button onclick="mostrarSeccion('reporte')">Matriculados</button>
+    <button onclick="mostrarSeccion('vacantes')">Vacantes Disponibles</button>
   </nav>
   <div class="container">
-    <section id="requisitos" class="seccion">
-      <h2>Requisitos de Matrícula</h2>
-      <h3>Para Nuevos</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Requisito</th>
-            <th>Presentado</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Constancia de vacante</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Resolucion de traslado</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Certificado de estudios</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Ficha unica de matricula</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Partida de nacimiento</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>DNI del estudiante</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>DNI de los padres</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Ficha de admisión</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Copia de DNI</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Comprobante de pago</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Descarte de anemia</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Descarte de TBC</td>
-            <td><input type="checkbox"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3>Para Antiguos</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Requisito</th>
-            <th>Presentado</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Renovacion de matricula</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>DNI del estudiante</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>DNI de los padres</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Ficha de admisión</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Copia de DNI</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Comprobante de pago</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Descarte de anemia</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr>
-            <td>Descarte de TBC</td>
-            <td><input type="checkbox"></td>
-          </tr>
-        </tbody>
-      </table>
+    <section id="inicio" class="seccion">
+      <h2>Descripción</h2>
+      <p>
+        El proceso de matrícula está disponible en las instituciones educativas del país para todos los niños, niñas, adolescentes, jóvenes y adultos.
+      </p>
+      <p>
+        Si eres madre, padre o representante legal de un o una menor en edad escolar, puedes matricularlo en un colegio de cualquier distrito del país. En colegios públicos, la matrícula es gratuita y no puede ser condicionada a:
+      </p>
+      <ul>
+        <li>Evaluación o examen de admisión previo al ingreso.</li>
+        <li>Compra de útiles, materiales u otros.</li>
+        <li>Pago de donaciones, aportes, cuotas de la Apafa u otros conceptos.</li>
+        <li>Presentación de documentos adicionales a los solicitados en la norma de matrícula.</li>
+      </ul>
+      <p>
+        En colegios privados, las condiciones para realizar el proceso de matrícula, los montos y oportunidades de pago deben estar en su Reglamento Interno y ser comunicadas a las familias 30 días calendarios antes del inicio de la presentación de solicitudes de vacante.
+      </p>
     </section>
 
+    <!-- Formulario estudiante nuevo -->
     <section id="nuevo" class="seccion">
       <h2>Formulario para Estudiantes Nuevos</h2>
       <form action="index.php" method="POST">
@@ -191,11 +107,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="email" name="email" required>
         <label>Teléfono</label>
         <input type="text" name="telefono" required>
+        <table>
+          <thead>
+            <tr>
+              <th>Requisito</th>
+              <th>Presentado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Constancia de vacante</td><td><input type="checkbox"></td></tr>
+            <tr><td>Resolucion de traslado</td><td><input type="checkbox"></td></tr>
+            <tr><td>Certificado de estudios</td><td><input type="checkbox"></td></tr>
+            <tr><td>Ficha unica de matricula</td><td><input type="checkbox"></td></tr>
+            <tr><td>Partida de nacimiento</td><td><input type="checkbox"></td></tr>
+            <tr><td>DNI del estudiante</td><td><input type="checkbox"></td></tr>
+            <tr><td>DNI de los padres</td><td><input type="checkbox"></td></tr>
+            <tr><td>Ficha de admisión</td><td><input type="checkbox"></td></tr>
+            <tr><td>Copia de DNI</td><td><input type="checkbox"></td></tr>
+            <tr><td>Comprobante de pago</td><td><input type="checkbox"></td></tr>
+            <tr><td>Descarte de anemia</td><td><input type="checkbox"></td></tr>
+            <tr><td>Descarte de TBC</td><td><input type="checkbox"></td></tr>
+          </tbody>
+        </table>
         <button type="submit">Enviar matrícula</button>
         <button type="button" onclick="mostrarSeccion('requisitos')">Regresar</button>
       </form>
     </section>
 
+    <!-- Formulario estudiante antiguo -->
     <section id="antiguo" class="seccion">
       <h2>Formulario para Estudiantes Antiguos</h2>
       <form action="index.php" method="POST">
@@ -211,85 +150,71 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="text" name="telefono" required>
         <label>Email</label>
         <input type="email" name="email" required>
+        <table>
+          <thead>
+            <tr><th>Requisito</th><th>Presentado</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Renovacion de matricula</td><td><input type="checkbox"></td></tr>
+            <tr><td>DNI del estudiante</td><td><input type="checkbox"></td></tr>
+            <tr><td>DNI de los padres</td><td><input type="checkbox"></td></tr>
+            <tr><td>Ficha de admisión</td><td><input type="checkbox"></td></tr>
+            <tr><td>Copia de DNI</td><td><input type="checkbox"></td></tr>
+            <tr><td>Comprobante de pago</td><td><input type="checkbox"></td></tr>
+            <tr><td>Descarte de anemia</td><td><input type="checkbox"></td></tr>
+            <tr><td>Descarte de TBC</td><td><input type="checkbox"></td></tr>
+          </tbody>
+        </table>
         <button type="submit">Actualizar matrícula</button>
         <button type="button" onclick="mostrarSeccion('requisitos')">Regresar</button>
       </form>
     </section>
 
+    <!-- Reporte de matrículas -->
     <section id="reporte" class="seccion">
-  <h2>Reporte de Matrículas</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Grado</th>
-        <th>Estudiantes Nuevos</th>
-        <th>Estudiantes Antiguos</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Inicial 3 años</td>
-        <td>12</td>
-        <td>10</td>
-        <td>22</td>
-      </tr>
-      <tr>
-        <td>Primaria 1°</td>
-        <td>15</td>
-        <td>14</td>
-        <td>29</td>
-      </tr>
-      <tr>
-        <td>Secundaria 1°</td>
-        <td>8</td>
-        <td>20</td>
-        <td>28</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+      <h2>Reporte de Matrículas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Grado</th>
+            <th>Estudiantes Nuevos</th>
+            <th>Estudiantes Antiguos</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Inicial 3 años</td><td>12</td><td>10</td><td>22</td></tr>
+          <tr><td>Primaria 1°</td><td>15</td><td>14</td><td>29</td></tr>
+          <tr><td>Secundaria 1°</td><td>8</td><td>20</td><td>28</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-
+    <!-- Vacantes disponibles -->
     <section id="vacantes" class="seccion">
-  <h2>Vacantes Disponibles 2025</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Grado</th>
-        <th>Capacidad Total</th>
-        <th>Inscritos</th>
-        <th>Vacantes Disponibles</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Inicial 3 años</td>
-        <td>30</td>
-        <td>22</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>Primaria 1°</td>
-        <td>35</td>
-        <td>29</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>Secundaria 1°</td>
-        <td>40</td>
-        <td>28</td>
-        <td>12</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
-
+      <h2>Vacantes Disponibles 2025</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Grado</th>
+            <th>Capacidad Total</th>
+            <th>Inscritos</th>
+            <th>Vacantes Disponibles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Inicial 3 años</td><td>30</td><td>22</td><td>8</td></tr>
+          <tr><td>Primaria 1°</td><td>35</td><td>29</td><td>6</td></tr>
+          <tr><td>Secundaria 1°</td><td>40</td><td>28</td><td>12</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
 
   <footer>
     <p>&copy; 2025 Colegio Privado</p>
   </footer>
+
   <script>
     function mostrarSeccion(seccion) {
       let secciones = document.querySelectorAll('.seccion');
