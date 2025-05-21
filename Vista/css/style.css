@@ -1,105 +1,127 @@
 body {
- margin: 0;
- font-family: Arial, sans-serif;
- background-color: #f0f4f8;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
 }
 
 header {
- background-color: #004080;
- color: white;
- text-align: center;
- padding: 20px;
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.Menu {
+  background-color: #004080;  /* azul oscuro */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 180px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 nav {
- background-color: #0066cc;
- display: flex;
- justify-content: center;
- flex-wrap: wrap;
- padding: 10px;
+  background-color: #003366;
+  display: flex;
+  flex-direction: column; /* apila en columna */
+  align-items: flex-start; /* alinea a la izquierda */
+  padding: 10px;
+  width: 180px; /* ancho fijo para el menú */
+  height: 100vh; /* para que ocupe toda la altura */
+  position: fixed; /* menú fijo al lado izquierdo */
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
 }
 
 nav button {
- background-color: #004080;
- color: white;
- padding: 14px 20px;
- margin: 5px;
- border: none;
- cursor: pointer;
- font-size: 16px;
+  background-color: #003366;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px 0; /* solo margen vertical */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* botones ocupan todo el ancho del nav */
+  text-align: left; /* texto alineado a la izquierda */
 }
 
 nav button:hover {
- background-color: #002f5f;
+  background-color: #002244; /* un poco más oscuro para hover */
 }
 
 .container {
- max-width: 900px;
- margin: 20px auto;
- background: white;
- padding: 30px;
- border-radius: 10px;
+  max-width: 900px;
+  margin: 20px 20px 20px 200px; /* margen izquierdo para dejar espacio al nav */
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
 }
 
 h2 {
- color: #004080;
- margin-top: 40px;
+  color: #003366;
+  margin-top: 40px;
 }
 
 form {
- margin-top: 20px;
+  margin-top: 20px;
 }
 
 form input, form select {
- width: 100%;
- padding: 10px;
- margin: 8px 0 20px 0;
- border-radius: 5px;
- border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 20px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 form button {
- background-color: #004080;
- color: white;
- padding: 10px;
- border: none;
- width: 100%;
- font-size: 16px;
- cursor: pointer;
- border-radius: 5px;
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 form button:hover {
- background-color: #002f5f;
+  background-color: #002244;
 }
 
 table {
- width: 100%;
- margin-top: 15px;
- border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
 }
 
 table, th, td {
- border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 
 th {
- background-color: #004080;
- color: white;
- padding: 10px;
+  background-color: #003366;
+  color: white;
+  padding: 10px;
 }
 
 td {
- padding: 10px;
- text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 footer {
- background-color: #004080;
- color: white;
- text-align: center;
- padding: 15px;
- margin-top: 30px;
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
 }
 
 
@@ -175,4 +197,3 @@ button[type="button"]:hover {
  color: white;
 
 }
-
