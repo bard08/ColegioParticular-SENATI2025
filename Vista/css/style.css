@@ -11,56 +11,55 @@ header {
   padding: 20px;
 }
 
-.Menu {
-  background-color: #004080;  /* azul oscuro */
-  color: white;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 180px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
 nav {
   background-color: #003366;
   display: flex;
-  flex-direction: column; /* apila en columna */
-  align-items: flex-start; /* alinea a la izquierda */
+  flex-direction: column;
+  align-items: flex-start;
   padding: 10px;
-  width: 180px; /* ancho fijo para el menú */
-  height: 100vh; /* para que ocupe toda la altura */
-  position: fixed; /* menú fijo al lado izquierdo */
+  width: 180px;
+  height: 100vh;
+  position: fixed;
   top: 0;
   left: 0;
   box-sizing: border-box;
+}
+
+.Menu {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+  padding: 10px 0 10px 10px;
+  border-bottom: 1px solid #ffffff33;
 }
 
 nav button {
   background-color: #003366;
   color: white;
   padding: 14px 20px;
-  margin: 5px 0; /* solo margen vertical */
+  margin: 5px 0;
   border: none;
   cursor: pointer;
   font-size: 16px;
-  width: 100%; /* botones ocupan todo el ancho del nav */
-  text-align: left; /* texto alineado a la izquierda */
+  width: 100%;
+  text-align: left;
 }
 
 nav button:hover {
-  background-color: #002244; /* un poco más oscuro para hover */
+  background-color: #002244;
 }
 
 .container {
   max-width: 900px;
-  margin: 20px 20px 20px 200px; /* margen izquierdo para dejar espacio al nav */
+  margin: 20px 20px 20px 200px;
   background: white;
   padding: 30px;
   border-radius: 10px;
+}
+
+.seccion {
+  display: none;
 }
 
 h2 {
@@ -95,6 +94,21 @@ form button:hover {
   background-color: #002244;
 }
 
+button[type="button"] {
+  background-color: #f0f4f8;
+  color: #004080;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #004080;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button[type="button"]:hover {
+  background-color: #004080;
+  color: white;
+}
+
 table {
   width: 100%;
   margin-top: 15px;
@@ -122,78 +136,4 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 30px;
-}
-
-
-
-
-
-
-
-.seccion {
-
-
-
- display: none;
-
-
-
-}
-
-
-
-
-
-
-
-button[type="button"] {
-
-
-
- background-color: #f0f4f8;
-
-
-
- color: #004080;
-
-
-
- padding: 10px;
-
-
-
- margin-top: 20px;
-
-
-
- border: 1px solid #004080;
-
-
-
- cursor: pointer;
-
-
-
- border-radius: 5px;
-
-
-
-}
-
-
-
-
-
-
-
-button[type="button"]:hover {
-
-
-
- background-color: #004080;
-
-
-
- color: white;
-
 }
