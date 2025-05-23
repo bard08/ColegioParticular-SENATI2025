@@ -234,7 +234,7 @@
       fila.style.display = grado.includes(filtro) ? "" : "none";
     });
   }
-</script>a
+</script>
   </div>
 
   <footer>
