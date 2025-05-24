@@ -1,81 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Montos</title>
-    <link rel="stylesheet" href="../Vista/css/Dis.css">
+<<<<< << HEAD
+  <meta charset="UTF-8" />
+  <title>Registro de Operación</title>
+  <link rel="stylesheet" href="../Modelo/VistaPension_Validacion.css" />
 </head>
 <body>
-    
+  <a href="../Vista/VistaPension_Principal.php">
+    <button class="volver-btn">Volver al Menú Principal</button>
+  </a>
 
+  <div class="form-container">
+    <h2>Registrar</h2>
+    <form id="registroForm" action="/ruta-de-tu-backend" method="POST">
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="activo">Activo</option>
+        <option value="no_activo">No Activo</option>
+      </select>
 
-<div class="container">
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required />
 
-    <h1>Montos</h1>
-    <div class="formulario">
-        <label for="id">ID:</label>
-        <input type="number" id="id" placeholder="Ingrese el ID" required>
-        <label for="monto">Monto:</label>
-        <input type="number" id="monto" placeholder="Ingrese el monto" required>
-        <label for="estado">Estado:</label>
-        <select id="estado" required>
-            <option value="1">Activo</option>
-            <option value="0">Inactivo</option>
-        </select>
-        <button onclick="agregarFila()">Agregar</button>
-            <a href="../Vista/VistaPension_Principal.php">
-        <button class="volver-btn">Volver al Menú Principal</button>
-</a>
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Monto</th>
-                <th>Estado</th>
-            </tr>
-        </thead>
-        <tbody id="tabla-cuerpo">
-        </tbody>
+      <label for="monto">Monto:</label>
+      <input type="number" id="monto" name="monto" step="0.01" required />
+
+      <label for="fecha_hora_operacion">Fecha y Hora de Operación:</label>
+      <input
+        type="datetime-local"
+        id="fecha_hora_operacion"
+        name="fecha_hora_operacion"
+        required
+      />
+
+      <label for="numero_operacion">Número de Operación:</label>
+      <input type="text" id="numero_operacion" name="numero_operacion" required />
+
+      <label for="numero_cuenta_destino">Número de Cuenta Destino:</label>
+      <input
+        type="text"
+        id="numero_cuenta_destino"
+        name="numero_cuenta_destino"
+        required
+      />
+
+      <button type="submit" class="btn-verde">Registrar</button>
+    </form>
+
+    <!-- Tabla para mostrar los registros -->
+    <table id="tablaRegistros">
+      <thead>
+        <tr>
+          <th>Estado</th>
+          <th>Fecha</th>
+          <th>Monto</th>
+          <th>Fecha y Hora de Operación</th>
+          <th>Número de Operación</th>
+          <th>Número de Cuenta Destino</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
     </table>
-    
-    
-</div>
+  </div>
 
-<script>
-    function agregarFila() {
-        var id = document.getElementById("id").value;
-        var monto = document.getElementById("monto").value;
-        var estado = document.getElementById("estado").value;
+  <script>
+    const form = document.getElementById('registroForm');
+    const tbody = document.querySelector('#tablaRegistros tbody');
 
-        if (id && monto && estado) {
-            var fila = document.createElement("tr");
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // evitar envío al servidor
 
-            var celdaId = document.createElement("td");
-            celdaId.textContent = id;
-            var celdaMonto = document.createElement("td");
-            celdaMonto.textContent = monto;
-            var celdaEstado = document.createElement("td");
-            var estadoSpan = document.createElement("span");
-            estadoSpan.className = estado == "1" ? "activo" : "inactivo"; 
-            estadoSpan.textContent = estado == "1" ? "Activo" : "Inactivo";
-            celdaEstado.appendChild(estadoSpan);
+      const datos = {
+        estado: this.estado.value,
+        fecha: this.fecha.value,
+        monto: parseFloat(this.monto.value).toFixed(2),
+        fechaHoraOperacion: this.fecha_hora_operacion.value,
+        numeroOperacion: this.numero_operacion.value,
+        numeroCuentaDestino: this.numero_cuenta_destino.value,
+      };
 
-            fila.appendChild(celdaId);
-            fila.appendChild(celdaMonto);
-            fila.appendChild(celdaEstado);
+      // Crear una nueva fila
+      const fila = document.createElement('tr');
 
-            document.getElementById("tabla-cuerpo").appendChild(fila);
+      fila.innerHTML = `
+        <td>${datos.estado}</td>
+        <td>${datos.fecha}</td>
+        <td>${datos.monto}</td>
+        <td>${datos.fechaHoraOperacion.replace('T', ' ')}</td>
+        <td>${datos.numeroOperacion}</td>
+        <td>${datos.numeroCuentaDestino}</td>
+      `;
 
-            document.getElementById("id").value = '';
-            document.getElementById("monto").value = '';
-            document.getElementById("estado").value = '1';
-        } else {
-            alert("Por favor, complete todos los campos.");
-        }
-    }
-</script>
+      // Añadir fila a la tabla
+      tbody.appendChild(fila);
 
+      // Limpiar formulario
+      this.reset();
+
+      alert('Datos registrados correctamente en la tabla.');
+    });
+  </script>
+</body>
+</html>
+=======
+  <meta charset="UTF-8">
+  <title>Registro de Operación</title>
+  <link rel="stylesheet" href="../Vista/css/VistaPension_Validacion.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Registrar</h2>
+    <form action="/ruta-de-tu-backend" method="POST">
+      <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+        <option value="activo">Activo</option>
+        <option value="no_activo">No Activo</option>
+        </select>
+      
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <label for="monto">Monto:</label>
+      <input type="number" id="monto" name="monto" step="0.01" required>
+
+      <label for="fecha_hora_operacion">Fecha y Hora de Operación:</label>
+      <input type="datetime-local" id="fecha_hora_operacion" name="fecha_hora_operacion" required>
+
+      <label for="numero_operacion">Número de Operación:</label>
+      <input type="text" id="numero_operacion" name="numero_operacion" required>
+
+      <label for="numero_cuenta_destino">Número de Cuenta Destino:</label>
+      <input type="text" id="numero_cuenta_destino" name="numero_cuenta_destino" required>
+
+      <button type="submit" class="btn-verde">Registrar</button>
+    </form>
+  </div>
 </body>
 </html>
