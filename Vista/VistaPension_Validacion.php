@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<<<<<<< HEAD
+<<<<< << HEAD
   <meta charset="UTF-8" />
   <title>Registro de Operación</title>
   <link rel="stylesheet" href="../Modelo/VistaPension_Validacion.css" />
@@ -139,4 +139,3 @@
   </div>
 </body>
 </html>
->>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
