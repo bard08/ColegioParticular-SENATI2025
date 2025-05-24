@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montos</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="../Vista/css/Dis.css">
 </head>
 <body>
@@ -13,13 +12,6 @@
 
 <div class="container">
 
-=======
-    <link rel="stylesheet" href="../Vista/css/Dis.css">
-</head>
-<body>
-
-<div class="container">
->>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
     <h1>Montos</h1>
     <div class="formulario">
         <label for="id">ID:</label>
@@ -32,12 +24,9 @@
             <option value="0">Inactivo</option>
         </select>
         <button onclick="agregarFila()">Agregar</button>
-<<<<<<< HEAD
             <a href="../Vista/VistaPension_Principal.php">
         <button class="volver-btn">Volver al Menú Principal</button>
 </a>
-=======
->>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
     </div>
     <table>
         <thead>
@@ -50,14 +39,8 @@
         <tbody id="tabla-cuerpo">
         </tbody>
     </table>
-<<<<<<< HEAD
     
     
-=======
-    <a href="../Vista/VistaPrincipal.php">
-        <button class="volver-btn">Volver al Menú Principal</button>
-    </a>
->>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
 </div>
 
 <script>
