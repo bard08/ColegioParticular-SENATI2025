@@ -15,12 +15,14 @@
 
   <nav>
     <div class="Menu">Menú</div>
+    <li><a href="../index.php">Inicio</a></li>
     <button onclick="mostrarSeccion('inicio')">Información</button>
     <button onclick="mostrarSeccion('nuevo')">Estudiante Nuevo</button>
     <button onclick="mostrarSeccion('antiguo')">Estudiante Antiguo</button>
     <button onclick="mostrarSeccion('reporte')">Reporte Matriculas</button>
     <button onclick="mostrarSeccion('vacantes')">Vacantes Disponibles</button>
     <button onclick="mostrarSeccion('pagos')">Reporte de pagos</button>
+    
   </nav>
 
   <div class="container">
@@ -263,7 +265,6 @@
   </script>
 </body>
 </html>
-
 
 
 
