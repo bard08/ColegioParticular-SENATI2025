@@ -3,28 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Módulo de Notas</title>
-  <link rel="stylesheet" href="../Vista/css/menuprincipal.css">
+  <link rel="stylesheet" href="../Vista/css/Seguimiento_menuprincipal.css">
 </head>
 <body>
 
   <!-- Menú lateral -->
-  <div class="container">
-    <aside class="menu-lateral">
-      <h2>📘 Seguimiento de Notas</h2>
-      <ul>
-        <li><a href="../index.php">Inicio</a></li>
-        <li><a href="VistaSeg_RegistroNota.php">Registrar Nota</a></li>
-        <li><a href="VistaSeg_VerNota.php">Ver Notas por Curso</a></li>
-        <li><a href="VistaSeg_ModificarNota.php">Modificar Nota</a></li>
-        <li><a href="historial.php">Historial</a></li>
-        <li><a href="#">Cursos</a></li>
-        <li><a href="#">Profesores</a></li>
-        <li><a href="#">Actividades</a></li>
-        <li><a href="#">Horarios</a></li>
-        <li><a href="#">Reportes</a></li>
-        <li><a href="#">Configuración</a></li>
+<nav>
+  <ul class="menu">
+    <li><a href="../index.php">Inicio</a></li>
+    <li><a href="">Notas</a>
+      <ul class="submenu">
+        <li><a href="../Vista/VistaSeguimiento_VerNota.php">Ver Nota Por Curso</a></li>
+        <li><a href="../Vista/VistaSeguimiento_RegistroNota.php">Registrar Notas</a></li>
+        <li><a href="../Vista/VistaSeguimiento_ModificarNota.php">Modificar Notas</a></li>
+        <li><a href="../Vista/VistaSeguimiento_historial.php">Historial de Notas</a></li> 
       </ul>
-    </aside>
+    </li>
+</div>
+<li><a href="#">Cursos</a>
+      <ul class="submenu">
+        <li><a href="../Vista/VistaSeguimiento_Cursos.php?curso=Mecanica Industrial">Mecánica Industrial</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Cursos.php?curso=Electronica">Electrónica</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Cursos.php?curso=Electricidad Industrial">Electricidad Industrial</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Cursos.php?curso=Automatizacion y Control Industrial">Automatización y Control Industrial</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Cursos.php?curso=Soldadura">Soldadura</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Cursos.php?curso=Diseno Grafico">Diseño Gráfico</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Cursos.php?curso=Ingenieria de Software">Ingeniería de Software</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Cursos.php?curso=Turismo">Turismo</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Cursos.php?curso=Seguridad y Redes">Seguridad y Redes</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Profesores</a>
+      <ul class="submenu">
+        <li><a href="#">Diseño Web</a></li>
+        <li><a href="#">Desarrollo</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Actividades</a>
+      <ul class="submenu">
+        <li><a href="#">Diseño Web</a></li>
+        <li><a href="#">Desarrollo</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Horarios</a>
+      <ul class="submenu">
+        <li><a href="#">Diseño Web</a></li>
+        <li><a href="#">Desarrollo</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
 
     <!-- Contenido principal -->
     <main class="contenido">

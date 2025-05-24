@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Pagos - Colegio</title>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="../Modelo/VistaPension_Vista.css">
+=======
     <link rel="stylesheet" href="../Vista/css/VistaPension_Vista.css">
+>>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
     <script>
         function agregarVista() {
             const pagoPension = document.getElementById("ID_PagoPension").value;
@@ -40,10 +44,21 @@
     </script>
 </head>
 <body>
+<<<<<<< HEAD
+
+<a href="../Vista/VistaPension_Principal.php">
+        <button class="volver-btn">Volver al Menú Principal</button>
+</a>
+    <div class="background">
+        <div class="container">
+
+
+=======
     <div class="background">
         <div class="container">
 
             <img src="../Modelo/logo-colegio.png" alt="Logo del Colegio" class="logo">
+>>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
 
             <h1>Vista</h1>
 
@@ -65,7 +80,11 @@
 
                 <label><input type="checkbox" id="chk_comprobante"> ¿Entregó comprobante?</label>
 
+<<<<<<< HEAD
+                <button o="submit">Agregar</button>
+=======
                 <button type="submit">Agregar</button>
+>>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
             </form>
 
             <h2>Datos Ingresados</h2>
@@ -84,9 +103,13 @@
                 </tbody>
             </table>
 
+<<<<<<< HEAD
+
+=======
             <a href="../Vista/VistaPrincipal.php">
                 <button class="volver-btn">Volver al Menú Principal</button>
             </a>
+>>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
         </div>
     </div>
 </body>

@@ -8,7 +8,7 @@
 
  <title>Historial de Pagos</title>
 
- <link rel="stylesheet" href="../Vista/css/VistaHistorialPago.css">
+ <link rel="stylesheet" href="../Modelo/VistaPension_HistorialPago.css">
 
 </head>
 
@@ -20,9 +20,11 @@
 
   <nav>
 
-  <a href="../Vista/VistaPrincipal.php">Inicio</a>
-  <a href="#servicios">Servicios</a>
-  <a href="#contacto">Contacto</a>
+    <a href="../Vista/VistaPrincipal.php">Inicio</a>
+
+   <a href="#servicios">Servicios</a>
+
+   <a href="#contacto">Contacto</a>
 
   </nav>
 
@@ -92,6 +94,8 @@
 
     <button onclick="location.href='VistaPension_PagoPension.php'">Ir a Pago Pension</button>
 
+    <button onclick="location.href='../Vista/VistaPension_Principal.php'">Volver a la pagina principal</button>
+
    </div>
 
 
@@ -141,4 +145,3 @@
 </body>
 
 </html>
-
