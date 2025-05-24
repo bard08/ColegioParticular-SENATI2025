@@ -18,15 +18,6 @@
 
  <header>
 
-  <nav>
-
-    <a href="../Vista/VistaPrincipal.php">Inicio</a>
-
-   <a href="#servicios">Servicios</a>
-
-   <a href="#contacto">Contacto</a>
-
-  </nav>
 
  </header>
 

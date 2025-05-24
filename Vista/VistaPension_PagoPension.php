@@ -3,11 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Pago</title>
-<<<<<<< HEAD
 <link rel="stylesheet" href="../Modelo/VistaPension_PagoPension.css">
-=======
-<link rel="stylesheet" href="../Vista/css/estilo.css">
->>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
 </head>
 <body>
   <h3 style="color:white;">Pago Pensión</h3>
@@ -35,13 +31,8 @@
       <button type="submit">Agregar</button>
 
     </form>
-<<<<<<< HEAD
 <a href="../Vista/VistaPension_Principal.php">
     <button class="volver-btn">Volver al menú principal</button>
-=======
-<a href="../Vista/VistaPrincipal.php">
-    <button class="volver-btn">Volver</button>
->>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
 </a>
     <table> 
       <thead>

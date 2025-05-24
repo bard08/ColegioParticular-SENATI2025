@@ -32,11 +32,11 @@ nav {
   font-weight: bold;
   color: white;
   margin-bottom: 15px;
-  padding: 10px 0 10px 10px;
+  padding: 20px 0 20px 20px;
   border-bottom: 1px solid #ffffff33;
 }
  a {
-    color: #1e90ff; /* Un color azul moderno */
+    color: white; /* Un color azul moderno */
     text-decoration: none; /* Eliminar subrayado */
     font-weight: bold;
     font-family: Arial, sans-serif;
