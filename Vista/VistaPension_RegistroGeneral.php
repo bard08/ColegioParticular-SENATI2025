@@ -8,11 +8,7 @@
 
   <title>Pensión - Registro General</title>
 
-<<<<<<< HEAD
   <link rel="stylesheet" href="../Modelo/VistaRegistroGeneral.css">
-=======
-  <link rel="stylesheet" href="../Vista/css/VistaRegistroGeneral.css">
->>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
 
 </head>
 
@@ -38,11 +34,7 @@
 
     <button onclick="location.href='VistaPension_HistorialPago.php'">Historial de pago</button>
 
-<<<<<<< HEAD
     <button onclick="location.href='../Vista/VistaPension_Principal.php'">Volver al Menu Principal</button>
-=======
-    <button onclick="location.href='../Vista/VistaPrincipal.php'">Volver al Menu Principal</button>
->>>>>>> 5543b73b9ae7be014e7aba8dc5b50a30e73dbe96
 
   </div>
 
