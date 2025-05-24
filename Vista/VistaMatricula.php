@@ -14,8 +14,7 @@
   </header>
 
   <nav>
-    <div class="Menu">Menú</div>
-    <li><a href="../index.php">Inicio</a></li>
+    <div class="Menu"><a href="../index.php">Inicio</a></div>
     <button onclick="mostrarSeccion('inicio')">Información</button>
     <button onclick="mostrarSeccion('nuevo')">Estudiante Nuevo</button>
     <button onclick="mostrarSeccion('antiguo')">Estudiante Antiguo</button>
