@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* También puedes especificarlo para html y body si lo prefieres */
+html, body {
+  margin: 0;
+  padding: 0;
+} 
+/*-----------------------------MENU HORIZONTAL--------------------------*/ 
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #004aad;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: #444;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+.contenido {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #f4f4f4;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.seccion-info {
+  margin-top: 30px;
+}
