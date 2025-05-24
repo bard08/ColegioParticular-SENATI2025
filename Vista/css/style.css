@@ -2,7 +2,9 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f4f8;
+  position: relative;
 }
+
 
 header {
   background-color: #003366;
@@ -33,6 +35,16 @@ nav {
   padding: 10px 0 10px 10px;
   border-bottom: 1px solid #ffffff33;
 }
+ a {
+    color: #1e90ff; /* Un color azul moderno */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  a:hover {
+    color: #ff4500; /* Cambia a naranja cuando se pasa el cursor */
+    text-decoration: underline;
+  }
 
 nav button {
   background-color: #003366;
@@ -50,8 +62,9 @@ nav button:hover {
   background-color: #002244;
 }
 
+
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   background: white;
   padding: 30px;
@@ -136,4 +149,8 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 30px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
