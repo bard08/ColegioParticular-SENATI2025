@@ -26,7 +26,7 @@
         <button onclick="agregarFila()">Agregar</button>
             <a href="VistaPrincipal.php">
         <button class="volver-btn">Volver al Menú Principal</button>
-</a>
+</a>  
     </div>
     <table>
         <thead>
