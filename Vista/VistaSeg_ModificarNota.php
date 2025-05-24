@@ -3,11 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Modificar Nota</title>
-    <link rel="stylesheet" href="../Vista/css/modificarnota.css">
+    <link rel="stylesheet" href="../Vista/css/Seguimiento_modificarnota.css">
 </head>
 <?php $mensaje = "----Notas----"; ?>
-
 <body>
+  <!-------------------------------------------MENU HORIZONTAL------------------------------------------------------->
+  <nav>
+  <ul class="menu">
+    <li><a href="../index.php">Inicio</a></li>
+    <li><a href="../Vista/VistaSeguimiento_MenuPrincipal.php">Notas</a>
+      <ul class="submenu">
+        <li><a href="../Vista/VistaSeguimiento_VerNota.php">Ver Nota Por Curso</a></li>
+        <li><a href="../Vista/VistaSeguimiento_RegistroNota.php">Registrar Notas</a></li>
+        <li><a href="../Vista/VistaSeguimiento_ModificarNota.php">Modificar Notas</a></li>
+        <li><a href="../Vista/VistaSeguimiento_historial.php">Historial de Notas</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Notas</a>
+      <ul class="submenu">
+        <li><a href="#">Diseño Web</a></li>
+        <li><a href="#">Desarrollo</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Notas</a>
+      <ul class="submenu">
+        <li><a href="#">Diseño Web</a></li>
+        <li><a href="#">Desarrollo</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Notas</a>
+      <ul class="submenu">
+        <li><a href="#">Diseño Web</a></li>
+        <li><a href="#">Desarrollo</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Notas</a>
+      <ul class="submenu">
+        <li><a href="#">Diseño Web</a></li>
+        <li><a href="#">Desarrollo</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+<!------------------------------------------------------------------------------------------------------------------------->
     <div class="contenedor">
         <h2>Modificar Nota</h2>
 
