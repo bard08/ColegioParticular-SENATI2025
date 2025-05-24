@@ -1,99 +1,57 @@
-/*body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-
-    nav {
-      background-color: #2c3e50;
-      overflow: hidden;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-
-    nav li {
-      position: relative;
-    }
-
-    nav li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 16px 20px;
-      text-decoration: none;
-    }
-
-    nav li a:hover {
-      background-color: #1abc9c;
-    }*/
-
-    /* Submenú */
-    /*nav li ul {
-      display: none;
-      position: absolute;
-      background-color: #34495e;
-      top: 50px;
-      left: 0;
-      min-width: 200px;
-      z-index: 1;
-    }
-
-    nav li:hover ul {
-      display: block;
-    }
-
-    nav li ul li a {
-      padding: 12px 16px;
-      text-align: left;
-    }
-
-    h1 {
-      text-align: center;
-      margin-top: 50px;
-    }*/
-
-
-*{
-    
-}    
-    .container {
-  display: flex;
-  height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.menu-lateral {
-  width: 220px;
-  background-color: #2c3e50;
-  color: white;
-  padding: 20px;
-}
-
-.menu-lateral h2 {
-  margin-top: 0;
-}
-
-.menu-lateral ul {
+/* También puedes especificarlo para html y body si lo prefieres */
+html, body {
+  margin: 0;
+  padding: 0;
+} 
+/*-----------------------------MENU HORIZONTAL--------------------------*/ 
+.menu {
   list-style: none;
   padding: 0;
+  margin: 0;
+  background-color: #004aad;
+  display: flex;
 }
 
-.menu-lateral li {
-  margin-bottom: 10px;
+.menu li {
+  position: relative;
 }
 
-.menu-lateral a {
-  color: white;
+.menu li a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
   text-decoration: none;
 }
 
-.menu-lateral a:hover {
-  text-decoration: underline;
+.menu li:hover {
+  background-color: #444;
 }
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+/*---------------------------------------------------------------------------------------------------*/
 
 .contenido {
   flex-grow: 1;
