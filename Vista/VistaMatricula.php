@@ -64,6 +64,7 @@
     <p>Plataforma de Matrículas 2025</p>
   </header>
 
+  <!-- menu de opciones de navegacion-->
   <nav>
     <div class="Menu"><a href="../index.php">Inicio</a></div>
     <button onclick="mostrarSeccion('inicio')">Información</button>
@@ -111,7 +112,7 @@
         </ul>
       </section>
 
-      <!-- Estudiante Nuevo -->
+      <!-- registro de estudiante Nuevo -->
       <section id="nuevo" class="seccion">
         <h2>Formulario para Estudiantes Nuevos</h2>
         <form id="formNuevo">
@@ -200,7 +201,7 @@
         </form>
       </section>
 
-      <!-- Estudiante Antiguo -->
+      <!-- registro de estudiante Antiguo -->
       <section id="antiguo" class="seccion">
         <h2>Formulario para Estudiantes Antiguos</h2>
         <form id="formAntiguo">
@@ -353,7 +354,7 @@
           <option value="6°">6°</option>
         </select>
 
-        <!-- Buscador -->
+        <!-- Buscador de vacantes -->
         <input
           type="text"
           id="buscadorVacantes"
