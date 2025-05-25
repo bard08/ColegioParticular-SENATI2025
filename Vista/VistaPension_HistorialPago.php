@@ -8,7 +8,7 @@
 
  <title>Historial de Pagos</title>
 
- <link rel="stylesheet" href="../Vista/css/Diss.css">
+ <link rel="stylesheet" href="../Vista/css/Dis.css">
 
 </head>
 
