@@ -87,7 +87,7 @@
       <h2>Seguimiento de Notas</h2>
       <p>Registro y seguimiento de notas.</p>
     </a>
-    <a href="Vista/VistaPension_Principal.php" class="card">
+    <a href="VistaPension_Principal.php" class="card">
       <h2>Pensión</h2>
       <p>Registro y seguimiento de pagos.</p>
     </a>
