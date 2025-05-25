@@ -7,7 +7,7 @@ body {
 
 
 header {
-  background-color: #0b233b;
+  background-color: #003366;
   color: white;
   text-align: center;
   padding: 20px;
@@ -37,16 +37,21 @@ nav {
   padding: 20px 0 20px 20px;
   border-bottom: 1px solid #ffffff33;
 }
- a {
-    color: white; /* Un color azul moderno */
-    text-decoration: none; /* Eliminar subrayado */
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-  }
-  a:hover {
-    color: #ff4500; /* Cambia a naranja cuando se pasa el cursor */
-    text-decoration: underline;
-  }
+
+a {
+  color: white;
+  /* Un color azul moderno */
+  text-decoration: none;
+  /* Eliminar subrayado */
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+a:hover {
+  color: #ff4500;
+  /* Cambia a naranja cuando se pasa el cursor */
+  text-decoration: underline;
+}
 
 nav button {
   background-color: #003366;
@@ -61,8 +66,10 @@ nav button {
 }
 
 nav button:hover {
-  background-color: #002244;
+  background-color: #73b2e9;
 }
+
+
 
 
 .container {
@@ -86,7 +93,8 @@ form {
   margin-top: 20px;
 }
 
-form input, form select {
+form input,
+form select {
   width: 100%;
   padding: 10px;
   margin: 8px 0 20px 0;
@@ -106,7 +114,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #002244;
+  background-color: #3674b2;
 }
 
 button[type="button"] {
@@ -130,7 +138,9 @@ table {
   border-collapse: collapse;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #ccc;
 }
 
@@ -146,23 +156,13 @@ td {
 }
 
 footer {
-  background-color: #0b233b;
+  background-color: #003366;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
   margin-top: 30px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-}
-.seccion {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  display: none;
-}
-
-.seccion.visible {
-  display: block;
-  opacity: 1;
 }
