@@ -83,7 +83,7 @@
       <h2>Matrícula</h2>
       <p>Gestión de Matrícula.</p>
     </a>
-    <a href="Vista/VistaSeg_MenuPrincipal.php" class="card">
+    <a href="Vista/VistaSeguimiento_MenuPrincipal.php" class="card">
       <h2>Seguimiento de Notas</h2>
       <p>Registro y seguimiento de notas.</p>
     </a>
