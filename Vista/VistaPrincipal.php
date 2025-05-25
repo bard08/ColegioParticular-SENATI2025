@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menú Principal - Colegio Futurista</title>
-  <link rel="stylesheet" href="../Vista/css/menu.css" />
+  <link rel="stylesheet" href="../Modelo/menu.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -19,6 +19,8 @@
       <a href="VistaPension_PagoPension.php" class="boton"><i data-lucide="file-text"></i> Pago Pensión</a>
       <a href="VistaPension_Vista.php" class="boton"><i data-lucide="eye"></i> Vista</a>
       <a href="VistaPension_RegistroGeneral.php" class="boton"><i data-lucide="users"></i> Registro General</a>
+      <a href="VistaPension_EstadoPago.php" class="boton"><i data-lucide="users"></i> Estado de Pago</a>
+      <a href="index.php" class="boton"><i data-lucide="users"></i> Volver al Inicio</a>
     </div>
   </div>
 
