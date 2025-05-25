@@ -1,0 +1,74 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f6fc;
+  color: #333;
+}
+
+/* También puedes especificarlo para html y body si lo prefieres */
+html, body {
+  margin: 0;
+  padding: 0;
+} 
+ /*--MENU HORIZONTAL----------------------------------------------------------------------*/
+ .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: 	#0000FF;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: #444;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+ /*--TABLA DEL LISTADO-------------------------------------------------------------*/
+ table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #eee;
+        }
+        /*--------------------------------------------------------------------------*/

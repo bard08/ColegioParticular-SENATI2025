@@ -1,0 +1,126 @@
+/*Cuerpo de la Pestaña---------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* También puedes especificarlo para html y body si lo prefieres */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: #f4f4f4;
+    align-items: start;
+    flex-direction: column;
+} 
+/*-----------------------------MENU HORIZONTAL--------------------------*/
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: 	#0000FF;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: #444;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+/*---------------------------------------------------------------------------------------------------*/
+.contenedor-tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .tarjeta-curso {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .tarjeta-curso h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .tarjeta-curso p {
+            margin: 5px 0;
+        }
+
+        .tarjeta-curso form {
+            margin-top: 10px;
+            text-align: right;
+        }
+
+        .tarjeta-curso button {
+            background-color: #007bff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .tarjeta-curso button:hover {
+            background-color: #0056b3;
+        }
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}

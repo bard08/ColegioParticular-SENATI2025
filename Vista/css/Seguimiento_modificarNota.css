@@ -16,7 +16,7 @@ body {
 
 h2 {
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
   text-align: center;
 }
 
@@ -84,3 +84,47 @@ button:hover {
   background-color: white;
   border-radius: 1px;
 }
+
+/*-------------------------------------------MENU LATERAL------------------------------------------------*/
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: 	#0000FF;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: #444;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0f27f6;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+/*-------------------------------------------------------------------------------------------------------------*/

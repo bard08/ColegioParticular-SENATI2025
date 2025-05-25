@@ -9,13 +9,19 @@ html, body {
   margin: 0;
   padding: 0;
 } 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f6fc;
+  color: #333;
+}
 
-/* Menú Horizontal */
+/* Menú Horizontal */ 
 .menu {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #004aad;
+  background-color: 	#0000FF;
   display: flex;
 }
 
@@ -39,7 +45,7 @@ html, body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #444;
+  background-color: #0f27f6;
   list-style: none;
   padding: 0;
   margin: 0;

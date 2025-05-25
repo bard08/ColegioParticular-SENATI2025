@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
+  background-color: #f2f6fc;
   color: #333;
 }
 
@@ -11,50 +11,49 @@ body {
   display: flex;
   height: 100vh;
 }
-
-.menu-lateral {
-  width: 250px;
-  background: linear-gradient(180deg, #2c3e50, #2c3e50);
-  color: #ecf0f1;
-  padding: 30px 20px;
+/*Menu horizontal-----------------------------------------------------------------------------------------*/
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #0000FF; 
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.15);
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
 }
 
-.menu-lateral h2 {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 15px;
-  color: #ffffff;
+.menu li {
+  position: relative;
 }
 
-.menu-lateral ul {
+.menu li a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: #444;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #035096;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.menu-lateral li {
-  margin-bottom: 10px;
+.submenu li a {
+  padding: 10px 20px;
 }
 
-.menu-lateral a {
-  text-decoration: none;
-  color: #ecf0f1;
-  padding: 10px 14px;
+.menu li:hover .submenu {
   display: block;
-  border-radius: 8px;
-  transition: background 0.3s;
 }
-
-.menu-lateral a:hover {
-  background: rgba(7, 70, 141, 0.925);
-  font-weight: bold;
-}
+/*-------------------------------------------------------------------------------------------------------------*/
 
 /* Contenido principal */
 .contenido {

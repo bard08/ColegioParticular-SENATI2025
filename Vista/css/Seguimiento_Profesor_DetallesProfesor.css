@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+/* También puedes especificarlo para html y body si lo prefieres */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*-----------------------------MENU HORIZONTAL-----------------------------------*/
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: 	#0000FF;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  display: block;
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: #444;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0f27f6; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+/*-----Contenido Principal-----------------------------------------------------------------------------------------------------*/
+.acciones {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-right: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.btn.editar {
+  background-color: #007bff;
+}
+
+.btn.editar:hover {
+  background-color: #0056b3;
+}
+
+.btn.volver {
+  background-color: #6c757d;
+}
+
+.btn.volver:hover {
+  background-color: #5a6268;
+}

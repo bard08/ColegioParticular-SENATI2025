@@ -14,39 +14,51 @@ h1 {
   color: #004080;
 }
 
-/* Menú lateral */
-.menu-lateral {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100%;
-  background-color: #2c3e50;
-  padding-top: 20px;
-}
-
-.menu-lateral ul {
-  list-style-type: none;
+/* Menú lateral ------------------------------------------------------------------------------*/
+.menu {
+  list-style: none; 
   padding: 0;
+  margin: 0;
+  background-color: #0000FF;
+  display: flex;
 }
 
-.menu-lateral ul li {
-  margin: 10px 0;
+.menu li {
+  position: relative;
 }
 
-.menu-lateral ul li a {
+.menu li a {
+  display: block;
+  padding: 14px 20px;
   color: #fff;
   text-decoration: none;
-  display: block;
+}
+
+.menu li:hover {
+  background-color: #444;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0f27f6;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li a {
   padding: 10px 20px;
-  transition: background-color 0.3s ease;
 }
 
-.menu-lateral ul li a:hover {
-  background-color: #004080;
+.menu li:hover .submenu {
+  display: block;
 }
+/*-----------------------------------------------------------------------------------------*/
 
-/* Select de cursos */
+/* Select de cursos */ 
 label, #curso {
   margin-left: 220px;
   margin-top: 20px;
