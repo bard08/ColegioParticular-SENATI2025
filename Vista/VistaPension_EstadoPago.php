@@ -8,7 +8,7 @@
 
  <title>Validación de Pagos</title>
 
- <link rel="stylesheet" href="../Vista/css/disenio.css">
+ <link rel="stylesheet" href="../Vista/css/Dis.css">
 
 </head>
 
