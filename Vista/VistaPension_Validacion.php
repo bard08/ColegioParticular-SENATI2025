@@ -33,7 +33,7 @@
 
       <button type="submit" class="btn-verde">Registrar</button>
 
-      <button onclick="location.href='../VistaPension_Principal.php'">Volver</button>
+      <button onclick="location.href='../Vista/VistaPension_Principal.php'">Volver</button>
 
     </form>
   </div>
