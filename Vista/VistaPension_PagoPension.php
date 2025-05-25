@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Pago</title>
-<link rel="stylesheet" href="../Modelo/VistaPension_PagoPension.css">
+<link rel="stylesheet" href="../Vista/css/VistaPension_PagoPension.css">
 </head>
 <body>
   <h3 style="color:white;">Pago Pensión</h3>
