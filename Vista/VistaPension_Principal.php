@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menú Principal - Colegio Futurista</title>
-  <link rel="stylesheet" href="../Vista/menu.css" />
+  <link rel="stylesheet" href="../Vista/css/menu.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
