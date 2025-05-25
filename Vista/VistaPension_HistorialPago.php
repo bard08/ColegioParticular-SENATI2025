@@ -8,7 +8,7 @@
 
  <title>Historial de Pagos</title>
 
- <link rel="stylesheet" href="../Modelo/VistaPension_HistorialPago.css">
+ <link rel="stylesheet" href="../Vista/css/VistaPension_HistorialPago.css">
 
 </head>
 
