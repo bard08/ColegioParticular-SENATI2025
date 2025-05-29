@@ -32,8 +32,8 @@
       <input type="text" id="numero_cuenta_destino" name="numero_cuenta_destino" required>
 
 
-      <button onclick="location.href='../Vista/VistaPension_Principal.php'">Volver</button>
       <button type="submit" class="btn-verde">Registrar</button>
+            <button onclick="location.href='../Vista/VistaPension_Principal.php'">Volver</button>
 
     </form>
   </div>
