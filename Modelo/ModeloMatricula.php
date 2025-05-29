@@ -10,7 +10,7 @@ class Matriculas {
     }
 
     public function obtenerMatriculas() {
-        $sql = "SELECT * FROM matriculas";
+        $sql = "SELECT * FROM renovacion_matricula";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);

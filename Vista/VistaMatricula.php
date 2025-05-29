@@ -274,59 +274,29 @@
       <section id="reporte" class="seccion">
         <h2>Reporte de Matrículas</h2>
 
-        <input
-          type="text"
-          id="buscadorMatriculas"
-          placeholder="Buscar por grado..."
-          onkeyup="filtrarReporteMatriculas()"
-          style="margin-bottom: 15px; padding: 8px; width: 100%; max-width: 300px" />
-
-        <table id="tablaMatriculas">
-          <thead>
-            <tr>
-              <th>Grado</th>
-              <th>Estudiantes Nuevos</th>
-              <th>Estudiantes Antiguos</th>
-              <th>Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Inicial 3 años</td>
-              <td>12</td>
-              <td>10</td>
-              <td>22</td>
-            </tr>
-            <tr>
-              <td>Primaria 1°</td>
-              <td>15</td>
-              <td>14</td>
-              <td>29</td>
-            </tr>
-            <tr>
-              <td>Secundaria 1°</td>
-              <td>8</td>
-              <td>20</td>
-              <td>28</td>
-            </tr>
-          </tbody>
-          <script>
-            function filtrarReporteMatriculas() {
-              let input = document.getElementById("buscadorMatriculas");
-              let filtro = input.value.toLowerCase();
-              let tabla = document.getElementById("tablaMatriculas");
-              let filas = tabla.getElementsByTagName("tr");
-
-              for (let i = 1; i < filas.length; i++) {
-                let celda = filas[i].getElementsByTagName("td")[0];
-                if (celda) {
-                  let texto = celda.textContent || celda.innerText;
-                  filas[i].style.display = texto.toLowerCase().indexOf(filtro) > -1 ? "" : "none";
-                }
-              }
-            }
-          </script>
-        </table>
+        <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Grado - Sección</th>
+            <th>Fecha Matricula</th>
+            <th>Estado Matricula</th>
+        </tr>
+        <?php if (!empty($datos) && is_array($datos)): ?>
+    <?php foreach ($datos as $matricula): ?>
+        <!-- mostrar datos -->
+    <?php endforeach; ?>
+<?php else: ?>
+    <p>No hay datos para mostrar.</p>
+<?php endif; ?>
+        <?php foreach ($matriculas as $matricula): ?>
+        <tr>
+            <td><?= htmlspecialchars($matricula['id_renovacion']) ?></td>
+            <td><?= htmlspecialchars($matricula['id_matricula']) ?></td>
+            <td><?= htmlspecialchars($matricula['fecha_renovacion']) ?></td>
+            <td><?= htmlspecialchars($matricula['estado_renovacion']) ?></td>
+        </tr>
+        <?php endforeach; ?>
+    </table>
       </section>
 
       <!-- Vacantes Disponibles -->

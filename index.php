@@ -92,13 +92,5 @@
       <p>Registro y seguimiento de pagos.</p>
     </a>
   </div>
-
-<?php
-require_once 'controlador/ControllerMatricula.php';
-
-$controller = new ControllerMatricula();
-$controller->index(); // puedes usar ruteo si quieres más control
-?>
-
 </body>
 </html>
