@@ -1,16 +1,24 @@
 <?php   
-$server="localhost";
-$usuario="root";
-$contrasena="";
-$base_datos="colegioparticular";
 
-try {
-    $conn=new PDO("mysql:host=$server;dbname=$base_datos",$usuario,$contrasena);
-    $conn->setAttribute(PDO:: ATTR_ERRMODE,PDO:: ERRMODE_EXCEPTION);
-    // echo "Conectado";
-} catch (PDOException $e) {
-    echo "Error ".$e->getMessage();
+class Conexion {
+    private $server="localhost";
+    private $base_datos="colegioparticular";
+    private $usuario="root";
+    private $contrasena="";
+    public $conn;
+
+    public function conectar() {
+        $this->conn = null;
+        try {
+            $this->conn = new PDO("mysql:host=$this->server;dbname=$this->base_datos;charset=utf8", 
+                                  $this->usuario, 
+                                  $this->contrasena);
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            // echo "Conectado";
+        } catch(PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+        return $this->conn;
+    }
 }
-
-
 ?>
