@@ -50,18 +50,18 @@
 
             <form onsubmit="event.preventDefault(); agregarVista();">
                 <label for="ID_PagoPension">ID de Pago de Pensión:</label>
-                <input type="number" id="ID_PagoPension" required>
+                <input type="number" id="ID_PagoPension">
 
                 <label for="id_validacion_pago">ID de Validación de Pago:</label>
-                <input type="number" id="id_validacion_pago" required>
+                <input type="number" id="id_validacion_pago">
 
                 <label for="id_monto">Monto (S/):</label>
                 <input type="number" id="id_monto" required>
 
                 <label>Estado de Pago:</label>
                 <div class="radio-group">
-                    <label><input type="radio" name="estadoDePago" value="0" required> Pendiente</label>
-                    <label><input type="radio" name="estadoDePago" value="1" required> Pagado</label>
+                    <label><input type="radio" name="estadoDePago" value="0"> Pendiente</label>
+                    <label><input type="radio" name="estadoDePago" value="1"> Pagado</label>
                 </div>
 
                 <label><input type="checkbox" id="chk_comprobante"> ¿Entregó comprobante?</label>
