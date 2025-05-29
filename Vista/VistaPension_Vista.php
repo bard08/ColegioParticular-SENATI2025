@@ -56,7 +56,7 @@
                 <input type="number" id="id_validacion_pago">
 
                 <label for="id_monto">Monto (S/):</label>
-                <input type="number" id="id_monto" required>
+                <input type="number" id="id_monto">
 
                 <label>Estado de Pago:</label>
                 <div class="radio-group">
