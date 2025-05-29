@@ -41,9 +41,6 @@
 </head>
 <body>
 
-<a href="../Vista/VistaPension_Principal.php">
-        <button class="volver-btn">Volver al Menú Principal</button>
-</a>
     <div class="background">
         <div class="container">
 
@@ -69,6 +66,10 @@
 
                 <label><input type="checkbox" id="chk_comprobante"> ¿Entregó comprobante?</label>
 
+
+    <a href="../Vista/VistaPension_Principal.php">
+        <button class="volver-btn">Volver al Menú Principal</button>
+</a>        
                 <button o="submit">Agregar</button>
             </form>
 
