@@ -1,86 +1,59 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
-
- <meta charset="UTF-8">
-
- <title>Validación de Pagos</title>
-
- <link rel="stylesheet" href="../Vista/css/Dis.css">
-
+  <meta charset="UTF-8" />
+  <title>Validación de Pagos</title>
+  <link rel="stylesheet" href="../Vista/css/Dis.css" />
 </head>
 
 <body>
+  <h1>Validación de Pagos</h1>
 
+  <div class="contenedor-principal">
+    <a href="../Vista/VistaPension_Principal.php">
+      <button class="volver-btn" type="button">Volver al Menú Principal</button>
+    </a>
 
- <h1>Validación de Pagos</h1>
+    <form method="post">
+      <input type="number" placeholder="ID" name="id" required />
 
-<a href="../Vista/VistaPension_Principal.php">
-        <button class="volver-btn">Volver al Menú Principal</button>
-</a>
+      <select name="estado" required>
+        <option value="">Selecciona estado</option>
+        <option value="Activo">Activo</option>
+        <option value="Inactivo">Inactivo</option>
+      </select>
 
- <form method="post">
+      <input type="date" name="fecha" required />
 
-  <input type="number" placeholder="ID" name="id" required>
+      <input type="number" placeholder="Monto" name="monto" required />
 
-  <select name="estado" required>
+      <input type="datetime-local" name="fechaHoraOperacion" required />
 
-   <option value="">Selecciona estado</option>
+      <input type="number" placeholder="Número Operación" name="numeroOperacion" required />
 
-   <option value="Activo">Activo</option>
+      <input type="text" placeholder="Cuenta Destino" name="cuentaDestino" required />
 
-   <option value="Inactivo">Inactivo</option>
+      <button type="submit">Agregar</button>
+    </form>
 
-  </select>
-
-  <input type="date" name="fecha" required>
-
-  <input type="number" placeholder="Monto" name="monto" required>
-
-  <input type="datetime-local" name="fechaHoraOperacion" required>
-
-  <input type="number" placeholder="Número Operación" name="numeroOperacion" required>
-
-  <input type="text" placeholder="Cuenta Destino" name="cuentaDestino" required>
-
-  <button type="submit">Agregar</button>
-
- </form>
-
-
-
- <table>
-
-  <thead>
-
-   <tr>
-
-    <th>ID</th>
-
-    <th>Estado</th>
-
-    <th>Fecha</th>
-
-    <th>Monto</th>
-
-    <th>Fecha/Hora Operación</th>
-
-    <th>Número Operación</th>
-
-    <th>Cuenta Destino</th>
-
-   </tr>
-
-  </thead>
-
-  </tbody>
-
- </table>
-
- 
-
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Estado</th>
+          <th>Fecha</th>
+          <th>Monto</th>
+          <th>Fecha/Hora Operación</th>
+          <th>Número Operación</th>
+          <th>Cuenta Destino</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí van las filas dinámicas -->
+      </tbody>
+    </table>
+  </div>
 </body>
 
 </html>
