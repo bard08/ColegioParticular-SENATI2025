@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <!-- Menú lateral -->
+<!-- Menú lateral -------------------------------------------------------------------------------------------->
 <nav>
   <ul class="menu">
     <li><a href="../index.php">Inicio</a></li>
@@ -37,23 +37,29 @@
     </li>>
     <li><a href="#">Actividades</a>
       <ul class="submenu">
-        <li><a href="#">Diseño Web</a></li> 
-        <li><a href="#">Desarrollo</a></li>
-        <li><a href="#">SEO</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Actividad_ListadoAct.php">Listado de Actividades</a></li> 
+        <li><a href="../Vista/Seguimiento_Actividad_RegistroAct.php">Registro de Actividades Academicas</a></li>
       </ul>
     </li>
     <li><a href="#">Horarios</a>
       <ul class="submenu">
-        <li><a href="#">Diseño Web</a></li>
-        <li><a href="#">Desarrollo</a></li>
-        <li><a href="#">SEO</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Horario_ListadoHor.php">Listado de Horarios</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Horario_RegistroHor.php">Registro de Horarios</a></li>
+        <li><a href="../Vista/VistaSeguimiento_Horario_HorarioProf.php">Horarios de Profesores</a></li>
+        <li><a href="../Vista//VistaSeguimiento_Horario_HorarioCur.php">Horarios de Cursos</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Reportes</a>
+      <ul class="submenu">
+        <li><a href="../Vista/VistaSeguimiento_Reporte_ListadoRep.php">Generar Reportes Academicos</a></li>
       </ul>
     </li>
     <li><a href="#">Contacto</a></li>
   </ul>
 </nav>
+<!------------------------------------------------------------------------------------------------------------------------------->
 
-    <!-- Contenido principal -->
+<!-- Contenido principal -->
     <div class="contenido">
         <div class="bienvenida">
             <div class="bienvenida-texto">
