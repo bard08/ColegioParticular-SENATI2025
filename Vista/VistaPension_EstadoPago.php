@@ -10,12 +10,8 @@
 <body>
   <h1>Validación de Pagos</h1>
 
-  <div class="contenedor-principal">
-    <!-- Botón Volver fuera del formulario para mejor control -->
-    <a href="../Vista/VistaPension_Principal.php">
-      <button class="volver-btn" type="button">Volver al Menú Principal</button>
-    </a>
-
+  <div class="contenedor-principal"
+    
     <form method="post">
       <input type="number" placeholder="ID" name="id" required />
 
@@ -34,7 +30,10 @@
       <input type="number" placeholder="Número Operación" name="numeroOperacion" required />
 
       <input type="text" placeholder="Cuenta Destino" name="cuentaDestino" required />
-
+    
+    <a href="../Vista/VistaPension_Principal.php">
+      <button class="volver-btn" type="button">Volver al Menú Principal</button>
+    </a>
       <button type="submit">Agregar</button>
     </form>
 
