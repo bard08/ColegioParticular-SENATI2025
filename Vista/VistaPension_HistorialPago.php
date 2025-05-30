@@ -1,35 +1,16 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
  <meta charset="UTF-8">
-
  <title>Historial de Pagos</title>
-
  <link rel="stylesheet" href="../Vista/css/disenio.css">
-
 </head>
 
 <body>
 
 
-
- <header>
-
-
- </header>
-
-
-
  <main>
 
-  <section id="inicio">
-
-   <h2>Bienvenido</h2>
-
-  </section>
 
 
 
@@ -98,41 +79,23 @@
      <tr>
 
       <th>Alumno</th>
-
       <th>ID Historial</th>
-
       <th>ID Pago Pensión</th>
-
       <th>Acción</th>
-
       <th>Estado Pago</th>
-
       <th>Monto</th>
-
       <th>Fecha</th>
-
       <th>IP Usuario</th>
-
      </tr>
-
+     
     </thead>
-
     <tbody>
-
      <tr>
-
       <td colspan="8" class="no-data">Sin datos disponibles</td>
-
      </tr>
-
     </tbody>
-
    </table>
-
   </div>
-
  </main>
-
 </body>
-
 </html>
