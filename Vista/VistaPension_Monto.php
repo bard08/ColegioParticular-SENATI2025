@@ -24,8 +24,8 @@
             <option value="0">Inactivo</option>
         </select>
         <button onclick="agregarFila()">Agregar</button>
-            <a href="../Vista/VistaPension_Principal.php">
-        <button class="volver-btn">Volver al Menú Principal</button>
+
+        <button class="volver-btn" onclick="location.href='../Vista/VistaPension_Principal.php'">Volver al Menú</button>
 </a>
     </div>
     <table>
