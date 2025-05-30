@@ -41,9 +41,6 @@
 </head>
 <body>
 
-<a href="../Vista/VistaPension_Principal.php">
-        <button class="volver-btn">Volver al Menú Principal</button>
-</a>
     <div class="background">
         <div class="container">
 
@@ -53,22 +50,24 @@
 
             <form onsubmit="event.preventDefault(); agregarVista();">
                 <label for="ID_PagoPension">ID de Pago de Pensión:</label>
-                <input type="number" id="ID_PagoPension" required>
+                <input type="number" id="ID_PagoPension">
 
                 <label for="id_validacion_pago">ID de Validación de Pago:</label>
-                <input type="number" id="id_validacion_pago" required>
+                <input type="number" id="id_validacion_pago">
 
                 <label for="id_monto">Monto (S/):</label>
-                <input type="number" id="id_monto" required>
+                <input type="number" id="id_monto">
 
                 <label>Estado de Pago:</label>
                 <div class="radio-group">
-                    <label><input type="radio" name="estadoDePago" value="0" required> Pendiente</label>
-                    <label><input type="radio" name="estadoDePago" value="1" required> Pagado</label>
+                    <label><input type="radio" name="estadoDePago" value="0"> Pendiente</label>
+                    <label><input type="radio" name="estadoDePago" value="1"> Pagado</label>
                 </div>
 
                 <label><input type="checkbox" id="chk_comprobante"> ¿Entregó comprobante?</label>
 
+
+    <button onclick="location.href='../Vista/VistaPension_Principal.php'">Volver a la pagina principal</button>
                 <button o="submit">Agregar</button>
             </form>
 
