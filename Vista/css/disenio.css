@@ -27,9 +27,7 @@ nav a {
 
 
 nav a:hover {
-
  text-decoration: underline;
-
 }
 
 
@@ -40,7 +38,7 @@ body {
 
  font-family: Arial, sans-serif;
 
- background-color: #f2f4f7;
+ background-color: blue;
 
  margin: 0;
 
@@ -72,7 +70,8 @@ body {
 
 h2 {
 
- color: #333;
+ color:  #004085;
+
 
  text-align: center;
 
@@ -146,7 +145,7 @@ h2 {
 
 .actions button {
 
- background-color: #0069d9;
+ background-color:  #004085;
 
  color: white;
 
@@ -198,7 +197,7 @@ th, td {
 
 th {
 
- background-color: #0a31e1;
+ background-color:  #004085;
 
  color: white;
 
