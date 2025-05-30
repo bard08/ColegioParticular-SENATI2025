@@ -8,7 +8,7 @@
 <body>
   <h3 style="color:white;">Pago Pensión</h3>
   <div class="container">
-    <h2 style="color:black;">Formulario</h2>
+    <h2>Formulario</h2>
 
     <form id="formulario">
       <input type="text" id="alumno" placeholder="Alumno" >
@@ -31,9 +31,7 @@
       <button type="submit">Agregar</button>
 
     </form>
-<a href="../Vista/VistaPension_Principal.php">
-    <button class="volver-btn">Volver al menú principal</button>
-</a>
+      <button onclick="location.href='../Vista/VistaPension_Principal.php'">Volver al menú</button>
     <table> 
       <thead>
         <tr>         
