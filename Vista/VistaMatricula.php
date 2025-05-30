@@ -277,9 +277,12 @@
         <table border="1">
         <tr>
             <th>ID</th>
-            <th>Grado - Sección</th>
-            <th>Fecha Matricula</th>
-            <th>Estado Matricula</th>
+            <th>nombre_apoderado</th>
+            <th>apellido_apoderado</th>
+            <th>dni_apoderado</th>
+            <th>telefono_apoderado</th>
+            <th>email_apoderado</th>
+            <th>direccion_apoderado</th>
         </tr>
         <?php if (!empty($datos) && is_array($datos)): ?>
     <?php foreach ($datos as $matricula): ?>
@@ -290,10 +293,13 @@
 <?php endif; ?>
         <?php foreach ($matriculas as $matricula): ?>
         <tr>
-            <td><?= htmlspecialchars($matricula['id_renovacion']) ?></td>
-            <td><?= htmlspecialchars($matricula['id_matricula']) ?></td>
-            <td><?= htmlspecialchars($matricula['fecha_renovacion']) ?></td>
-            <td><?= htmlspecialchars($matricula['estado_renovacion']) ?></td>
+            <td><?= htmlspecialchars($matricula['id_apoderado']) ?></td>
+            <td><?= htmlspecialchars($matricula['nombre_apoderado']) ?></td>
+            <td><?= htmlspecialchars($matricula['apellido_apoderado']) ?></td>
+            <td><?= htmlspecialchars($matricula['dni_apoderado']) ?></td>
+            <td><?= htmlspecialchars($matricula['telefono_apoderado']) ?></td>
+            <td><?= htmlspecialchars($matricula['email_apoderado']) ?></td>
+            <td><?= htmlspecialchars($matricula['direccion_apoderado']) ?></td>
         </tr>
         <?php endforeach; ?>
     </table>

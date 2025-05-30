@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../config/conexion.php';
+require_once __DIR__ . '/../Config/conexion.php';
 
 class Matriculas {
     private $conn;
@@ -10,7 +10,7 @@ class Matriculas {
     }
 
     public function obtenerMatriculas() {
-        $sql = "SELECT * FROM renovacion_matricula";
+        $sql = "SELECT * FROM apoderados";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
