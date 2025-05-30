@@ -25,7 +25,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #007bff;
+    color:  #004085;
 }
 
 .formulario {
@@ -49,12 +49,16 @@ input, select, button {
 }
 
 button {
-    width: 25%;
-    background-color: #fff;
-    color: #007bff;
-    border: 1px solid #007bff;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+  background-color:  #004085;
+  color: white;
+  font-size: 16px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -67,6 +71,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    ;
 }
 
 th, td {
@@ -76,12 +81,14 @@ th, td {
 }
 
 th {
-    background-color: #007bff;
+    background-color:  #004085;
     color: #fff;
 }
 
+
 tr:nth-child(even) {
     background-color: #f9f9f9;
+    
 }
 
 /* Estilos para el estado */
