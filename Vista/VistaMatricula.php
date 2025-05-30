@@ -65,15 +65,15 @@
   </header>
 
   <!-- menu de opciones de navegacion-->
-  <nav>
-    <div class="Menu"><a href="../index.php">Inicio</a></div>
-    <button onclick="mostrarSeccion('inicio')">Información</button>
-    <button onclick="mostrarSeccion('nuevo')">Estudiante Nuevo</button>
-    <button onclick="mostrarSeccion('antiguo')">Estudiante Antiguo</button>
-    <button onclick="mostrarSeccion('reporte')">Reporte Matriculas</button>
-    <button onclick="mostrarSeccion('vacantes')">Vacantes Disponibles</button>
-    <button onclick="mostrarSeccion('pagos')">Reporte de pagos</button>
-  </nav>
+<nav>
+  <button onclick="location.href='../index.php'">Inicio</button>
+  <button onclick="mostrarSeccion('inicio')">Información</button>
+  <button onclick="mostrarSeccion('nuevo')">Estudiante Nuevo</button>
+  <button onclick="mostrarSeccion('antiguo')">Estudiante Antiguo</button>
+  <button onclick="mostrarSeccion('reporte')">Reporte Matriculas</button>
+  <button onclick="mostrarSeccion('vacantes')">Vacantes Disponibles</button>
+  <button onclick="mostrarSeccion('pagos')">Reporte de pagos</button>
+</nav>
 
   <div class="container">
     <!-- Información -->
@@ -270,40 +270,54 @@
         </form>
       </section>
 
-      <!-- Reporte de Matrículas -->
-      <section id="reporte" class="seccion">
-        <h2>Reporte de Matrículas</h2>
+    <!-- Reporte de Matrículas -->
+<section id="reporte" class="seccion">
+  <h2>Reporte de Matrículas</h2>
 
-        <table border="1">
+ <!-- Filtros por columnas con etiquetas -->
+<div style="margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <label for="filtroNombre"><strong>Nombre:</strong></label>
+    <input type="text" id="filtroNombre" onkeyup="filtrarTabla()" />
+  </div>
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <label for="filtroApellido"><strong>Apellido:</strong></label>
+    <input type="text" id="filtroApellido" onkeyup="filtrarTabla()" />
+  </div>
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <label for="filtroDNI"><strong>DNI:</strong></label>
+    <input type="text" id="filtroDNI" onkeyup="filtrarTabla()" />
+  </div>
+</div>
+
+  <table id="tablaMatriculas" border="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th onclick="ordenarTabla(1)">Nombre</th>
+        <th onclick="ordenarTabla(2)">Apellido</th>
+        <th onclick="ordenarTabla(3)">DNI</th>
+        <th>Teléfono</th>
+        <th>Email</th>
+        <th>Dirección</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php foreach ($matriculas as $matricula): ?>
         <tr>
-            <th>ID</th>
-            <th>nombre_apoderado</th>
-            <th>apellido_apoderado</th>
-            <th>dni_apoderado</th>
-            <th>telefono_apoderado</th>
-            <th>email_apoderado</th>
-            <th>direccion_apoderado</th>
+          <td><?= htmlspecialchars($matricula['id_apoderado']) ?></td>
+          <td><?= htmlspecialchars($matricula['nombre_apoderado']) ?></td>
+          <td><?= htmlspecialchars($matricula['apellido_apoderado']) ?></td>
+          <td><?= htmlspecialchars($matricula['dni_apoderado']) ?></td>
+          <td><?= htmlspecialchars($matricula['telefono_apoderado']) ?></td>
+          <td><?= htmlspecialchars($matricula['email_apoderado']) ?></td>
+          <td><?= htmlspecialchars($matricula['direccion_apoderado']) ?></td>
         </tr>
-        <?php if (!empty($datos) && is_array($datos)): ?>
-    <?php foreach ($datos as $matricula): ?>
-        <!-- mostrar datos -->
-    <?php endforeach; ?>
-<?php else: ?>
-    <p>No hay datos para mostrar.</p>
-<?php endif; ?>
-        <?php foreach ($matriculas as $matricula): ?>
-        <tr>
-            <td><?= htmlspecialchars($matricula['id_apoderado']) ?></td>
-            <td><?= htmlspecialchars($matricula['nombre_apoderado']) ?></td>
-            <td><?= htmlspecialchars($matricula['apellido_apoderado']) ?></td>
-            <td><?= htmlspecialchars($matricula['dni_apoderado']) ?></td>
-            <td><?= htmlspecialchars($matricula['telefono_apoderado']) ?></td>
-            <td><?= htmlspecialchars($matricula['email_apoderado']) ?></td>
-            <td><?= htmlspecialchars($matricula['direccion_apoderado']) ?></td>
-        </tr>
-        <?php endforeach; ?>
-    </table>
-      </section>
+      <?php endforeach; ?>
+    </tbody>
+  </table>
+</section>
+
 
       <!-- Vacantes Disponibles -->
       <section id="vacantes" class="seccion">
@@ -440,9 +454,6 @@
     </div>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Colegio Privado</p>
-  </footer>
 
   <script>
     function mostrarSeccion(seccion) {
@@ -508,6 +519,50 @@
     }
     
   </script>
+<!-- SCRIPT mejorado -->
+<script>
+  function filtrarTabla() {
+    const nombreFiltro = document.getElementById("filtroNombre").value.toLowerCase();
+    const apellidoFiltro = document.getElementById("filtroApellido").value.toLowerCase();
+    const dniFiltro = document.getElementById("filtroDNI").value.toLowerCase();
+
+    const tabla = document.getElementById("tablaMatriculas");
+    const filas = tabla.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+
+    for (let i = 0; i < filas.length; i++) {
+      const celdas = filas[i].getElementsByTagName("td");
+      const nombre = celdas[1].textContent.toLowerCase();
+      const apellido = celdas[2].textContent.toLowerCase();
+      const dni = celdas[3].textContent.toLowerCase();
+
+      const coincide = nombre.includes(nombreFiltro) &&
+                       apellido.includes(apellidoFiltro) &&
+                       dni.includes(dniFiltro);
+
+      filas[i].style.display = coincide ? "" : "none";
+    }
+  }
+
+  let ordenAsc = true;
+  function ordenarTabla(columna) {
+    const tabla = document.getElementById("tablaMatriculas");
+    const tbody = tabla.tBodies[0];
+    const filas = Array.from(tbody.rows);
+
+    filas.sort((a, b) => {
+      const valorA = a.cells[columna].innerText.toLowerCase();
+      const valorB = b.cells[columna].innerText.toLowerCase();
+
+      return ordenAsc
+        ? valorA.localeCompare(valorB)
+        : valorB.localeCompare(valorA);
+    });
+
+    ordenAsc = !ordenAsc;
+
+    filas.forEach(fila => tbody.appendChild(fila));
+  }
+</script>
 </body>
 
 </html>
