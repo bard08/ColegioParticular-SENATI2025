@@ -1,49 +1,25 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
   <meta charset="UTF-8">
-
   <title>Pensión - Registro General</title>
-
   <link rel="stylesheet" href="../Vista/css/VistaRegistroGeneral.css">
-
 </head>
-
 <body>
-
-
-
 <div class="container">
-
   <h2>Registro General de Pagos</h2>
-
-
-
   <div class="search-container">
-
     <input type="text" id="searchInput" placeholder="Buscar por nombre o correo...">
-
-    <button onclick="searchTable()">Buscar</button>
-
+    <button class="style-blue"onclick="searchTable()">Buscar</button>
   </div>
-
   <div class="actions">
-
     <button onclick="location.href='VistaPension_HistorialPago.php'">Historial de pago</button>
-
     <button onclick="location.href='../Vista/VistaPension_Principal.php'">Volver al Menu Principal</button>
-
   </div>
 
   <table>
-
     <thead>
-
       <tr>
-
         <th>ID Registro</th>
 
         <th>ID Pago Pensión</th>
