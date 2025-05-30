@@ -20,9 +20,8 @@
       <a href="VistaPension_Vista.php" class="boton"><i data-lucide="eye"></i> Vista</a>
       <a href="VistaPension_RegistroGeneral.php" class="boton"><i data-lucide="users"></i> Registro General</a>
       <a href="VistaPension_EstadoPago.php" class="boton"><i data-lucide="users"></i> Estado de Pago</a>
-
+      <a href="../main/index.php" class="boton"><i data-lucide="users"></i> Volver al Inicio</a>
     </div>
-    <a href="index.php" class="boton"><i data-lucide="users"></i> Volver al Inicio</a>
   </div>
 
   <script>
