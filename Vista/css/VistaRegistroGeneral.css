@@ -2,7 +2,7 @@ body {
 
   font-family: Arial, sans-serif;
 
-  background-color: #f3f4f6;
+  background-color: blue;
 
   padding: 40px;
 
@@ -16,7 +16,7 @@ body {
 
   margin: auto;
 
-  background-color: #fff;
+  background-color: white;
 
   padding: 30px;
 
@@ -25,26 +25,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
 }
-
-.container::before {
-
-  content: "";
-
-  display: block;
-
-  width: 105.4%;
-
-  height: 9px;
-
-  background: #004085;
-
-  border-radius: 6px 6px 0 0;
-
-  margin: -30px -30px 10px -30px;
-
-}
-
-
 
  h2 {
 
@@ -78,7 +58,7 @@ body {
 
 .actions button {
 
-  background-color: #004085;
+  background-color: #1c1e9c;
 
   color: white;
 
@@ -98,7 +78,7 @@ body {
 
 .actions button:hover {
 
-  background-color: #002c5a;
+  background-color: blue;
 
 }
 
@@ -132,7 +112,7 @@ th, td {
 
 th {
 
-  background-color: #004085;
+  background-color: #1c1e9c;
 
   color: #fff;
 
@@ -178,3 +158,11 @@ tr:hover {
 
 }
 
+.style-blue{
+  background-color: #1c1e9c;
+  color: white;
+}
+
+h2{
+  color: #1c1e9c;
+}
