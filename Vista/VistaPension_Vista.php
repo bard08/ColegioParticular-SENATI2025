@@ -67,8 +67,9 @@
                 <label><input type="checkbox" id="chk_comprobante"> ¿Entregó comprobante?</label>
 
 
-    <button onclick="location.href='../Vista/VistaPension_Principal.php'">Volver a la pagina principal</button>
+
                 <button o="submit">Agregar</button>
+                <button onclick="location.href='../Vista/VistaPension_Principal.php'">Volver a la pagina principal</button>
             </form>
 
             <h2>Datos Ingresados</h2>
