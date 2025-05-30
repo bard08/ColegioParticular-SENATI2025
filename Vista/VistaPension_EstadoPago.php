@@ -8,17 +8,18 @@
 
  <title>Validación de Pagos</title>
 
- <link rel="stylesheet" href="../Vista/css/VistaPension_EstadoPago.css">
+ <link rel="stylesheet" href="../Modelo/VistaPension_EstadoPago.css">
 
 </head>
 
 <body>
 
 
-
  <h1>Validación de Pagos</h1>
 
-
+<a href="../Vista/VistaPension_Principal.php">
+        <button class="volver-btn">Volver al Menú Principal</button>
+</a>
 
  <form method="post">
 
