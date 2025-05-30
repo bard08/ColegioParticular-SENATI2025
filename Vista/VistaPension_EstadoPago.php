@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Validación de Pagos</title>
-  <link rel="stylesheet" href="../Vista/css/Dis.css" />
+  <link rel="stylesheet" href="../Vista/css/VistaPension_EstadoPago.css" />
 </head>
 
 <body>
