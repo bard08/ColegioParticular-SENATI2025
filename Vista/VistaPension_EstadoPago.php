@@ -8,7 +8,7 @@
 
  <title>Validación de Pagos</title>
 
- <link rel="stylesheet" href="../Modelo/VistaPension_EstadoPago.css">
+ <link rel="stylesheet" href="../Vista/css/VistaPension_EstadoPago.css">
 
 </head>
 
