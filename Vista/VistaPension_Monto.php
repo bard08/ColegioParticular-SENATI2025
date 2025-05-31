@@ -26,7 +26,7 @@
         <button onclick="agregarFila()">Agregar</button>
 
         <button class="volver-btn" onclick="location.href='../Vista/VistaPension_Principal.php'">Volver al Menú</button>
-</a>
+
     </div>
     <table>
         <thead>
