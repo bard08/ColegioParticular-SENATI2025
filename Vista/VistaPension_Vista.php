@@ -34,8 +34,7 @@
             document.getElementById("ID_PagoPension").value = "";
             document.getElementById("id_validacion_pago").value = "";
             document.getElementById("id_monto").value = "";
-            const radios = document.querySelectorAll('input[name="estadoDePago"]');
-            radios.forEach(r => r.checked = false);
+            estadoDePago.checked = false;
             document.getElementById("chk_comprobante").checked = false;
         }
     </script>
@@ -44,6 +43,8 @@
 
     <div class="background">
         <div class="container">
+
+
 
             <h1>Vista</h1>
 
@@ -65,9 +66,10 @@
 
                 <label><input type="checkbox" id="chk_comprobante"> ¿Entregó comprobante?</label>
 
-                <button type="submit">Agregar</button>
-                <!-- Evita validación con type="button" -->
-                <button type="button" onclick="location.href='../Vista/VistaPension_Principal.php'">Volver a la pagina principal</button>
+
+
+                <button o="submit">Agregar</button>
+                <button onclick="location.href='../Vista/VistaPension_Principal.php'">Volver a la pagina principal</button>
             </form>
 
             <h2>Datos Ingresados</h2>
@@ -82,7 +84,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Aquí se insertarán las filas dinámicamente -->
+
                 </tbody>
             </table>
 
