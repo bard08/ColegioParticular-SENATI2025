@@ -35,7 +35,7 @@
             document.getElementById("id_validacion_pago").value = "";
             document.getElementById("id_monto").value = "";
             estadoDePago.checked = false;
-            document.getElementById("chk_comprobante").checked = false;
+            document.getElementById("chk_comprobante");
         }
     </script>
 </head>
