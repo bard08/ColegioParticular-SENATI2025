@@ -33,7 +33,6 @@ h1 {
 }
 
 label {
-    
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
@@ -63,7 +62,7 @@ button {
 
 button:hover {
     
-    background-color: #007bff;
+    background-color: blue;
     color: #fff;
 }
 
