@@ -1,6 +1,6 @@
 body {
 
- background-color: #f5f7fa;
+ background-color: blue;
 
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -16,7 +16,7 @@ h1 {
 
  text-align: center;
 
- color: #2c3e50;
+ color: white;
 
  margin-top: 20px;
 
@@ -74,7 +74,7 @@ form button {
 
  padding: 12px;
 
- background-color: #007bff;
+ background-color: #004085;
 
  color: white;
 
@@ -94,7 +94,7 @@ form button {
 
 form button:hover {
 
- background-color: #0056b3;
+ background-color: blue;
 
 }
 
@@ -134,7 +134,7 @@ th, td {
 
 th {
 
- background-color: #007bff;
+ background-color:#004085;
 
  color: white;
 
@@ -180,5 +180,10 @@ tr:nth-child(even) {
 
  font-weight: bold;
 
+}
+
+button.volver-btn{
+    width: 100%;
+    background-color:#004085;
 }
 
